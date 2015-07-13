@@ -5,8 +5,4 @@ build
 .google
 .gradle
 .idea
-build.gradle
-gradle
-gradlew
-gradlew.bat
-settings.gradle
+
