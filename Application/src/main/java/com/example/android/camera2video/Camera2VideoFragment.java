@@ -371,7 +371,14 @@ public class Camera2VideoFragment extends Fragment implements View.OnClickListen
             if (!mCameraOpenCloseLock.tryAcquire(2500, TimeUnit.MILLISECONDS)) {
                 throw new RuntimeException("Time out waiting to lock camera opening.");
             }
-            String cameraId = manager.getCameraIdList()[0];
+            // changing the CameraID number to use the front camera.
+            // 0 is the back camera and 1 is the front camera, this is only on API 19 and above,
+            // otherwise we need to detect the camera ID number and use it change the front and back
+
+            String cameraId = manager.getCameraIdList()[1];
+
+            // String cameraId = manager.getCameraIdList()[1]; original one
+
 
             // Choose the sizes for camera preview and video recording
             CameraCharacteristics characteristics = manager.getCameraCharacteristics(cameraId);
