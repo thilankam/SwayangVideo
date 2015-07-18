@@ -69,6 +69,7 @@ public class Camera2VideoFragment extends Fragment implements View.OnClickListen
     // surface rotations are relative to landscape mode.
     // thilanka1.example.com
     // cpom.example.android.camera2video
+    // needed to activate the Front camera for this.
 
     static {
         ORIENTATIONS.append(Surface.ROTATION_0, 90);
