@@ -379,6 +379,11 @@ public class Camera2VideoFragment extends Fragment implements View.OnClickListen
 
             // String cameraId = manager.getCameraIdList()[1]; original one
 
+            // We need to add the CameraId detection code and add to this because
+            // different mobile phones that runs different Android API versions behave
+            // differently. So General code snippet for detectCameraId() method have to wire
+            // for SwayangRecord.
+
 
             // Choose the sizes for camera preview and video recording
             CameraCharacteristics characteristics = manager.getCameraCharacteristics(cameraId);
