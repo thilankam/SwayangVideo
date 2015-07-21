@@ -442,6 +442,7 @@ public class Camera2VideoFragment extends Fragment implements View.OnClickListen
     // This method detectCameraId() will detect the cameraId on the phone.
     // created for SwayangVideo to use any mobile phone that runs Android OS.
     private void detectCameraId(){
+ // This is a Test work.
 
     }
 
