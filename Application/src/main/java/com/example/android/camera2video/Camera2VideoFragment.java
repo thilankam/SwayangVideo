@@ -386,6 +386,8 @@ public class Camera2VideoFragment extends Fragment implements View.OnClickListen
 
 
             // Choose the sizes for camera preview and video recording
+
+
             CameraCharacteristics characteristics = manager.getCameraCharacteristics(cameraId);
             StreamConfigurationMap map = characteristics
                     .get(CameraCharacteristics.SCALER_STREAM_CONFIGURATION_MAP);
@@ -435,6 +437,13 @@ public class Camera2VideoFragment extends Fragment implements View.OnClickListen
     /**
      * Start the camera preview.
      */
+
+    // detectCameraId() method ..
+    // This method detectCameraId() will detect the cameraId on the phone.
+    private void detectCameraId(){
+
+    }
+
     private void startPreview() {
         if (null == mCameraDevice || !mTextureView.isAvailable() || null == mPreviewSize) {
             return;
