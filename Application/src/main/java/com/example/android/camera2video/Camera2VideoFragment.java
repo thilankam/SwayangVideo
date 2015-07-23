@@ -607,6 +607,8 @@ public class Camera2VideoFragment extends Fragment implements View.OnClickListen
 
     }
 
+
+     // this is for the ErrorDialog.
     public static class ErrorDialog extends DialogFragment {
 
         @Override
