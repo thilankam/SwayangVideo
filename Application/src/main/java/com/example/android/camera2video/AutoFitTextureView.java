@@ -28,6 +28,9 @@ public class AutoFitTextureView extends TextureView {
     private int mRatioWidth = 0;
     private int mRatioHeight = 0;
 
+  //  This file contains the width ratio and height ratio...
+    // Edit the width and height relavent to the phone screen dimentions for the Swayangvideo.
+
     public AutoFitTextureView(Context context) {
         this(context, null);
     }
